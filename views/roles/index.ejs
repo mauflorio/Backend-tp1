@@ -1,0 +1,14 @@
+<%- include('../partials/header') %>
+
+<h2>Lista de Roles</h2>
+<a href="/roles/new">Crear nuevo rol</a>
+<ul>
+  <% roles.forEach(r => { %>
+    <li>
+      <a href="/roles/<%= r.id %>"><%= r.nombre %></a> |
+      <a href="/roles/<%= r.id %>/edit">Editar</a>
+    </li>
+  <% }) %>
+</ul>
+
+<%- include('../partials/footer') %>

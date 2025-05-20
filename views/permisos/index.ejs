@@ -1,0 +1,17 @@
+<%- include('../partials/header') %>
+
+<h2>Lista de Permisos</h2>
+<a href="/permisos/new">Crear nuevo permiso</a>
+<ul>
+  <% permisos.forEach(p => { %>
+    <li>
+      <%= p.nombre %> |
+      <a href="/permisos/<%= p.id %>/edit">Editar</a> |
+      <form action="/permisos/<%= p.id %>?_method=DELETE" method="POST" style="display:inline;">
+        <button type="submit">Eliminar</button>
+      </form>
+    </li>
+  <% }) %>
+</ul>
+
+<%- include('../partials/footer') %>

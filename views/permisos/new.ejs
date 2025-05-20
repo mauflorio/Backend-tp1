@@ -1,0 +1,11 @@
+<%- include('../partials/header') %>
+
+<h2>Crear Permiso</h2>
+<form action="/permisos" method="POST">
+  <input type="text" name="nombre" placeholder="Nombre del permiso" required />
+  <button type="submit">Guardar</button>
+</form>
+<% if (error) { %><p class="error"><%= error %></p><% } %>
+<a href="/permisos">Volver</a>
+
+<%- include('../partials/footer') %>

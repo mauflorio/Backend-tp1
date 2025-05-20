@@ -1,0 +1,12 @@
+<%- include('../partials/header') %>
+
+<h2>Rol: <%= rol.nombre %></h2>
+<h3>Permisos asignados:</h3>
+<ul>
+  <% permisos.forEach(p => { %>
+    <li><%= p.nombre %></li>
+  <% }) %>
+</ul>
+<a href="/roles">Volver</a>
+
+<%- include('../partials/footer') %>

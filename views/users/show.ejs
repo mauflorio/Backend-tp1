@@ -1,0 +1,18 @@
+<%- include('../partials/header') %>
+
+<h2>Usuario: <%= user.nombre %></h2>
+<h3>Rol: <%= user.rol || 'Sin rol asignado' %></h3>
+
+<h3>Permisos:</h3>
+<ul>
+  <% if (permisos.length === 0) { %>
+    <li>No tiene permisos asignados</li>
+  <% } else { %>
+    <% permisos.forEach(p => { %>
+      <li><%= p.nombre %></li>
+    <% }) %>
+  <% } %>
+</ul>
+<a href="/users">Volver</a>
+
+<%- include('../partials/footer') %>

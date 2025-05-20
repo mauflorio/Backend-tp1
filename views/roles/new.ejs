@@ -1,0 +1,11 @@
+<%- include('../partials/header') %>
+
+<h2>Crear Rol</h2>
+<form action="/roles" method="POST">
+  <input type="text" name="nombre" placeholder="Nombre del rol" required />
+  <button type="submit">Guardar</button>
+</form>
+<% if (error) { %><p class="error"><%= error %></p><% } %>
+<a href="/roles">Volver</a>
+
+<%- include('../partials/footer') %>
