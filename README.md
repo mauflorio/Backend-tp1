@@ -54,8 +54,8 @@ database.sqlite → Base de datos SQLite
 ## 🔑 Permisos creados
 
 - `crear_usuario`
-- `editar_clases`
-- `ver_reportes`
+- `editar_usuario`
+- `eliminar_usuario`
 
 ---
 
