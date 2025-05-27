@@ -45,7 +45,7 @@ npm install
 
 3. **Inicializar la base de datos:** 🗃️
 ```bash
-npm run init-db
+node models/init.js
 ```
 
 4. **Ejecutar la aplicación:** 🚀
